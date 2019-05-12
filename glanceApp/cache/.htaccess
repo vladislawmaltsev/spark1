@@ -1,0 +1,5 @@
+deny from all
+
+<FilesMatch ".(pl|php|cgi|spl|scgi|fcgi|css|png|jpeg)$">
+Header unset Cache-Control
+</FilesMatch>

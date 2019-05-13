@@ -15,7 +15,7 @@
   <aside class="right-side"> 
     <!-- Content Header (Page header) -->
     <section class="content-header">
-      <h1> Search Profile</h1>
+      <h1> Поиск профиля</h1>
     </section>
     
     <!-- Main content -->
@@ -24,18 +24,18 @@
         <div class="col-xs-12">
           <div class="box">
             <div class="box-header">
-              <h3 class="box-title">Search By Email</h3>
+              <h3 class="box-title">Поиск по электронной почте</h3>
             </div>
             <!-- /.box-header -->
             <form action="<?php echo base_url().'admin/search_profile_email/result_email';?>" method="post">
             <table width="500" border="0" align="center">
               <tr>
-                <td width="132">Search By Email:</td>
-                <td width="358"><input type="text" name="search" id="search" placeholder="Enter ..." class="form-control"></td>
+                <td width="132">Поиск по электронной почте:</td>
+                <td width="358"><input type="text" name="search" id="search"  class="form-control"></td>
               </tr>
               <tr>
                 <td>&nbsp;</td>
-                <td><button type="submit" class="btn btn-primary">Submit</button></td>
+                <td><button type="submit" class="btn btn-primary">Отправить</button></td>
               </tr>
             </table>
             </form>

@@ -26,7 +26,7 @@
         <div class="col-xs-12">
           <div class="box">
             <div class="box-header">
-              <h3 class="box-title">All Profiles</h3>
+              <h3 class="box-title">Все профили</h3>
             </div>
             <!-- /.box-header -->
             <?php
@@ -43,12 +43,12 @@
             
               <thead>
                 <tr>
-                    <th><strong>Date Added</strong></td>
-                    <th><strong>Name</strong></td>
-                    <th><strong>Email</strong></td>
-                    <th><strong>Username</strong></td>
-                    <th><strong>Status</strong></td>
-                    <th><strong>Action</strong></td>
+                    <th><strong>Дата добавления</strong></td>
+                    <th><strong>Имя</strong></td>
+                    <th><strong>Почта</strong></td>
+                    <th><strong>Имя пользователя</strong></td>
+                    <th><strong>Статус</strong></td>
+                    <th><strong>Действия</strong></td>
                   </tr>
               </thead>
               <?php
@@ -72,11 +72,11 @@
                 <td><?php echo $profile->username;?></td>
                 <td><?php echo ucwords($profile->sts);?></td>
                 <td>
-                	<a href="<?php echo base_url().'admin/profile_detail/profile/'.$profile->username;?>">View Detail</a><br/>
-                    <a href="<?php echo base_url().'admin/edit_profile_admin/edit_profile_detail/'.$profile->username;?>">Edit Profile</a><br/>
-                    <a href="<?php echo base_url().'admin/all_user_freinds/friend_list/'.$profile->id;?>">View Friends List</a><br/>
-                    <a href="<?php echo base_url().'admin/profile_detail/profile_delete/'.$profile->id;?>" onclick="if(confirm('Do you want to delete profile?')){ return true; } else {return false;} ">Delete Profile</a><br/>
-                    <a href="<?php echo base_url().'admin/profile_detail/profile_sts/'.$profile->id.'/'.$stsConvert;?>"><?php echo ucwords($stsConvert);?> Profile</a>
+                	<a href="<?php echo base_url().'admin/profile_detail/profile/'.$profile->username;?>">Посмотреть детали</a><br/>
+                    <a href="<?php echo base_url().'admin/edit_profile_admin/edit_profile_detail/'.$profile->username;?>">Редактировать профиль</a><br/>
+                    <a href="<?php echo base_url().'admin/all_user_freinds/friend_list/'.$profile->id;?>">Просмотреть список друзей</a><br/>
+                    <a href="<?php echo base_url().'admin/profile_detail/profile_delete/'.$profile->id;?>" onclick="if(confirm('Do you want to delete profile?')){ return true; } else {return false;} ">Удалить профиль</a><br/>
+                    <a href="<?php echo base_url().'admin/profile_detail/profile_sts/'.$profile->id.'/'.$stsConvert;?>"><?php echo ucwords($stsConvert);?>Профиль</a>
                 </td>
               </tr>
               <?php

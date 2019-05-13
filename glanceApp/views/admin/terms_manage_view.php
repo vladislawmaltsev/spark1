@@ -16,7 +16,7 @@
   <aside class="right-side"> 
     <!-- Content Header (Page header) -->
     <section class="content-header">
-      <h1> Terms Management
+      <h1> Условия управления
         <!--<small>advanced tables</small>--> 
       </h1>
     </section>
@@ -41,7 +41,7 @@
             <form action="<?php echo base_url()."admin/pages_manage/update_content_terms"?>" method="post">
             <table width="100%" border="0">
               <tr>
-                <td width="19%" align="right" valign="top"><strong>Content:</strong>&nbsp;</td>
+                <td width="19%" align="right" valign="top"><strong>Содержание:</strong>&nbsp;</td>
                 <td width="81%">
                  <textarea cols="80" id="editor1" name="editor1" rows="10"><?php echo stripslashes($content);?></textarea>
                  <script>
@@ -62,18 +62,12 @@
             </table>
 			</form>
             
-            <!-- /.box-body --> 
           </div>
-          <!-- /.box --> 
-          
-          <!-- /.box --> 
+
         </div>
       </div>
     </section>
-    <!-- /.content --> 
   </aside>
-  <!-- /.right-side --> 
 </div>
-<!-- ./wrapper -->
 </body>
 </html>

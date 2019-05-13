@@ -15,7 +15,7 @@
   <aside class="right-side"> 
     <!-- Content Header (Page header) -->
     <section class="content-header">
-      <h1> User's Friend List 
+      <h1> Список друзей пользователя
         <!--<small>advanced tables</small>--> 
       </h1>
     </section>
@@ -26,7 +26,7 @@
         <div class="col-xs-12">
           <div class="box">
             <div class="box-header">
-              <h3 class="box-title">Friend List of <?php echo $real_name;?></h3>
+              <h3 class="box-title">Список друзей <?php echo $real_name;?></h3>
             </div>
             <!-- /.box-header -->
             <?php
@@ -43,11 +43,11 @@
             
               <thead>
                 <tr>
-                    <th width="84"><strong>Date Added</strong></th>
-                    <th width="44"><strong>Name</strong></th>
-                    <th width="72"><strong>Username</strong></th>
-                    <th width="32">Age </th>                 
-                  <th width="61"><strong>Location</strong></th>                    
+                    <th width="84"><strong>Дата добавления</strong></th>
+                    <th width="44"><strong>Имя</strong></th>
+                    <th width="72"><strong>Имя пользователя</strong></th>
+                    <th width="32">Возраст </th>
+                  <th width="61"><strong>Местоположение</strong></th>
                </tr>
               </thead>
               <?php
@@ -71,18 +71,12 @@
                 </tfoot>
               </table>
             </div>
-            <!-- /.box-body --> 
           </div>
-          <!-- /.box --> 
-          
-          <!-- /.box --> 
+
         </div>
       </div>
     </section>
-    <!-- /.content --> 
   </aside>
-  <!-- /.right-side --> 
 </div>
-<!-- ./wrapper -->
 </body>
 </html>

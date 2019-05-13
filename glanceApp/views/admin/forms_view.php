@@ -15,9 +15,7 @@
   <aside class="right-side"> 
     <!-- Content Header (Page header) -->
     <section class="content-header">
-      <h1> Profile Management 
-        <!--<small>advanced tables</small>--> 
-      </h1>
+      <h1> Управление профилями</h1>
     </section>
     
     <!-- Main content -->
@@ -28,33 +26,33 @@
                             <!-- general form elements -->
                             <div class="box box-primary">
                                 <div class="box-header">
-                                    <h3 class="box-title">Quick Example</h3>
+                                    <h3 class="box-title">Быстрый пример</h3>
                                 </div><!-- /.box-header -->
                                 <!-- form start -->
                                 <form role="form">
                                     <div class="box-body">
                                         <div class="form-group">
-                                            <label for="exampleInputEmail1">Email address</label>
-                                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                                            <label for="exampleInputEmail1">Адрес электронной почты</label>
+                                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Введите почту">
                                         </div>
                                         <div class="form-group">
-                                            <label for="exampleInputPassword1">Password</label>
-                                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                                            <label for="exampleInputPassword1">Пароль</label>
+                                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Пароль">
                                         </div>
                                         <div class="form-group">
-                                            <label for="exampleInputFile">File input</label>
+                                            <label for="exampleInputFile">Ввод файла</label>
                                             <input type="file" id="exampleInputFile">
-                                            <p class="help-block">Example block-level help text here.</p>
+                                            <p class="help-block">Пример справочного текста на уровне блока здесь.</p>
                                         </div>
                                         <div class="checkbox">
                                             <label>
-                                                <input type="checkbox"> Check me out
+                                                <input type="checkbox"> Проверить меня
                                             </label>
                                         </div>
                                     </div><!-- /.box-body -->
 
                                     <div class="box-footer">
-                                        <button type="submit" class="btn btn-primary">Submit</button>
+                                        <button type="submit" class="btn btn-primary">Отправить</button>
                                     </div>
                                 </form>
                             </div><!-- /.box -->
@@ -62,7 +60,7 @@
                             <!-- Form Element sizes -->
                             <div class="box box-success">
                                 <div class="box-header">
-                                    <h3 class="box-title">Different Height</h3>
+                                    <h3 class="box-title">Разной высоты</h3>
                                 </div>
                                 <div class="box-body">
                                     <input class="form-control input-lg" type="text" placeholder=".input-lg">
@@ -75,7 +73,7 @@
 
                             <div class="box box-danger">
                                 <div class="box-header">
-                                    <h3 class="box-title">Different Width</h3>
+                                    <h3 class="box-title">Разной ширины</h3>
                                 </div>
                                 <div class="box-body">
                                     <div class="row">
@@ -95,12 +93,12 @@
                             <!-- Input addon -->
                             <div class="box box-info">
                                 <div class="box-header">
-                                    <h3 class="box-title">Input Addon</h3>
+                                    <h3 class="box-title">Входной аддон</h3>
                                 </div>
                                 <div class="box-body">
                                     <div class="input-group">
                                         <span class="input-group-addon">@</span>
-                                        <input type="text" class="form-control" placeholder="Username">
+                                        <input type="text" class="form-control" placeholder="Имя пользователя">
                                     </div>
                                     <br/>
                                     <div class="input-group">
@@ -114,10 +112,10 @@
                                         <span class="input-group-addon">.00</span>
                                     </div>
 
-                                    <h4>With icons</h4>
+                                    <h4>С иконками</h4>
                                     <div class="input-group">
                                         <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
-                                        <input type="text" class="form-control" placeholder="Email">
+                                        <input type="text" class="form-control" placeholder="Почта">
                                     </div>
                                     <br/>
                                     <div class="input-group">
@@ -131,7 +129,7 @@
                                         <span class="input-group-addon"><i class="fa fa-ambulance"></i></span>
                                     </div>
 
-                                    <h4>With checkbox and radio inputs</h4>
+                                    <h4>С чекбоксами и радиокнопками</h4>
                                     <div class="row">
                                         <div class="col-lg-6">
                                             <div class="input-group">
@@ -139,17 +137,17 @@
                                                     <input type="checkbox">
                                                 </span>
                                                 <input type="text" class="form-control">
-                                            </div><!-- /input-group -->
-                                        </div><!-- /.col-lg-6 -->
+                                            </div>
+                                        </div>
                                         <div class="col-lg-6">
                                             <div class="input-group">
                                                 <span class="input-group-addon">
                                                     <input type="radio">
                                                 </span>
                                                 <input type="text" class="form-control">
-                                            </div><!-- /input-group -->
-                                        </div><!-- /.col-lg-6 -->
-                                    </div><!-- /.row -->
+                                            </div>
+                                        </div>
+                                    </div>
 
                                     <h4>With buttons</h4>
                                     <p class="margin">Large: <code>.input-group.input-group-lg</code></p>

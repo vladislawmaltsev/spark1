@@ -15,9 +15,7 @@
   <aside class="right-side"> 
     <!-- Content Header (Page header) -->
     <section class="content-header">
-      <h1> User's Messages Management 
-        <!--<small>advanced tables</small>--> 
-      </h1>
+      <h1> Управление сообщениями пользователя</h1>
     </section>
     
     <!-- Main content -->
@@ -26,7 +24,7 @@
         <div class="col-xs-12">
           <div class="box">
             <div class="box-header">
-              <h3 class="box-title">All Messages</h3>
+              <h3 class="box-title">Все сообщения</h3>
             </div>
             <!-- /.box-header -->
             <?php
@@ -43,11 +41,11 @@
             
               <thead>
                 <tr>
-                    <th><strong>Date Added</strong></td>
-                    <th><strong>Sender</strong></td>
-                    <th><strong>Receiver</strong></td>
-                    <th><strong>Message</strong></td>
-                    <th><strong>Action</strong></td>
+                    <th><strong>Дата добавления</strong></td>
+                    <th><strong>Отправитель</strong></td>
+                    <th><strong>Получатель</strong></td>
+                    <th><strong>Сообщение</strong></td>
+                    <th><strong>Действие</strong></td>
                   </tr>
               </thead>
               <?php
@@ -62,7 +60,7 @@
                 <td><?php echo $message['message'];?></td>
                 <td>
                 	
-                    <a href="<?php echo base_url().'admin/all_messages/message_delete/'.$message['messages_id'];?>" onclick="if(confirm('Do you want to delete message?')){ return true; } else {return false;} ">Delete Message</a><br/>
+                    <a href="<?php echo base_url().'admin/all_messages/message_delete/'.$message['messages_id'];?>" onclick="if(confirm('Do you want to delete message?')){ return true; } else {return false;} ">Удалить сообщение</a><br/>
                </td>
               </tr>
               <?php

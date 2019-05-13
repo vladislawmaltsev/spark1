@@ -15,7 +15,7 @@
   <aside class="right-side"> 
     <!-- Content Header (Page header) -->
     <section class="content-header">
-      <h1> Profile Management 
+      <h1> Управление профилями
         <!--<small>advanced tables</small>--> 
       </h1>
     </section>
@@ -26,7 +26,7 @@
         <div class="col-xs-12">
           <div class="box">
             <div class="box-header">
-              <h3 class="box-title">All Profiles</h3>
+              <h3 class="box-title">Все профили</h3>
             </div>
             <!-- /.box-header -->
             <div class="box-body table-responsive">

@@ -12,18 +12,15 @@
 <script src="<?php echo base_url(); ?>glancePublic/ckeditor/ckeditor.js"></script>
 <div class="wrapper row-offcanvas row-offcanvas-left"> 
 	<?php $this->load->view('admin/common/left_side'); ?>
-  <!-- Right side column. Contains the navbar and content of the page -->
-  <aside class="right-side"> 
-    <!-- Content Header (Page header) -->
+  <aside class="right-side">
     <section class="content-header">
-      <h1> Manage Email Templates</h1></section><section class="content">
+      <h1>Управление шаблонами электронной почты</h1></section><section class="content">
       <div class="row">
         <div class="col-xs-12">
           <div class="box">
             <div class="box-header">
-              <h3 class="box-title">Edit  Email Templates</h3>
+              <h3 class="box-title">Изменить шаблоны электронной почты</h3>
             </div>
-            <!-- /.box-header -->
             <div style="font-size:11px; color:#F00;"><?php echo validation_errors(); ?></div>
             <?php
             if($this->session->flashdata('msg')):
@@ -43,31 +40,31 @@
                       <div class="row">
                         <div class="col-md-12">
                           <div class="form-group">
-                            <label>Email Template Name</label>
+                            <label>Имя шаблона электронной почты</label>
                             <input type="text" placeholder="Email Name" name="email_name" value="<?php echo $row->email_name;?>" id="email_name" class="form-control" required >
                           </div>
                         </div>
                         <div class="col-md-12">
                           <div class="form-group">
-                            <label>From Name</label>
+                            <label>От кого</label>
                             <input type="text" placeholder="From Name" name="from_name" value="<?php echo $row->from_name;?>" id="from_name" class="form-control" required >
                           </div>
                         </div>
                         <div class="col-md-12">
                           <div class="form-group">
-                            <label>From Email Address</label>
+                            <label>С адреса электронной почты</label>
                             <input type="text" placeholder="From Email Address" value="<?php echo $row->from_email;?>" name="from_email" id="from_email" class="form-control" required >
                           </div>
                         </div>
                         
                         <div class="col-md-12">
                           <div class="form-group">
-                            <label>Email Subject</label>
+                            <label>Тема письма</label>
                             <input type="text" placeholder="Email Subject" name="email_subject"  value="<?php echo $row->email_subject;?>" id="email_subject" class="form-control" required >
                           </div>
                         </div>
                         <div class="col-md-12">
-                          <label>Email Content</label>
+                          <label>Содержимое письма</label>
                           <textarea placeholder="Email Content" name="editor1" id="editor1" class="form-control"><?php echo $row->email_content;?></textarea>
                  <script>
 
@@ -93,7 +90,7 @@
             <div class="box-footer">
               <input type="hidden" value="update" name="method" id="method" />
               <input type="hidden" value="<?php echo $row->ID;?>" name="pid" id="pid" />
-              <button class="btn btn-primary" id="btn_submit" type="submit">Update</button>
+              <button class="btn btn-primary" id="btn_submit" type="submit">Обновить</button>
             </div>
             </form>
             <!-- /.box-body --> 

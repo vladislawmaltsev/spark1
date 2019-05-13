@@ -11,13 +11,10 @@
 <?php $this->load->view('admin/common/header'); ?>
 <div class="wrapper row-offcanvas row-offcanvas-left"> 
 	<?php $this->load->view('admin/common/left_side'); ?>
-  <!-- Right side column. Contains the navbar and content of the page -->
-  <aside class="right-side"> 
+  <aside class="right-side">
     <!-- Content Header (Page header) -->
     <section class="content-header">
-      <h1> Profile Management 
-        <!--<small>advanced tables</small>--> 
-      </h1>
+      <h1>Управление профилями</h1>
     </section>
     
     <!-- Main content -->
@@ -26,7 +23,7 @@
         <div class="col-xs-12">
           <div class="box">
             <div class="box-header">
-              <h3 class="box-title">Edit Profile - <?php echo ($row->name=='')?$row->username:$row->name;?></h3>
+              <h3 class="box-title">Редактировать профиль - <?php echo ($row->name=='')?$row->username:$row->name;?></h3>
             </div>
             <!-- /.box-header -->
             
@@ -35,14 +32,14 @@
             <table width="706" border="0">
               <tr>
                 <td width="51">&nbsp;</td>
-                <td width="209">Full Name:</td>
+                <td width="209">ФИО:</td>
                 <td width="220"><input type="text" name="name" id="name" class="form-control" value="<?php echo $row->name;?>" />
                 <?php echo form_error('name', '<div class="error"><span>', '</span></div>'); ?></td>
                 <td width="208">&nbsp;</td>
               </tr>
               <tr>
                 <td>&nbsp;</td>
-                <td>Phone:</td>
+                <td>Телефон:</td>
                 <td><span class="formwrp">
                   <input type="text" name="phone" id="phone" class="form-control" value="<?php echo $row->phone;?>" />
                 </span></td>
@@ -50,95 +47,95 @@
               </tr>
               <tr>
                 <td>&nbsp;</td>
-                <td>Relationship status:</td>
+                <td>Семейное положение:</td>
                 <td><select name="relationship_status" id="relationship_status" class="form-control">
-                    <option value="Dating" <?php echo is_selected($row->relationship_status,'Dating');?>>Dating</option>
-                    <option value="Friendship" <?php echo is_selected($row->relationship_status,'Friendship');?>>Friendship</option>
-                    <option value="Married" <?php echo is_selected($row->relationship_status,'Married');?>>Married</option>
+                    <option value="Dating" <?php echo is_selected($row->relationship_status,'Dating');?>>Встречается</option>
+                    <option value="Friendship" <?php echo is_selected($row->relationship_status,'Friendship');?>>Дружит</option>
+                    <option value="Married" <?php echo is_selected($row->relationship_status,'Married');?>>В браке</option>
                   </select>
                 </td>
                 <td>&nbsp;</td>
               </tr>
               <tr>
                 <td>&nbsp;</td>
-                <td>Gender:</td>
+                <td>Пол:</td>
                 <td><select name="gender" id="gender" class="form-control">
-                    <option value="Male" <?php echo is_selected($row->gender,'Male');?>>Male</option>
-                    <option value="Female" <?php echo is_selected($row->gender,'Female');?>>Female</option>
+                    <option value="Male" <?php echo is_selected($row->gender,'Male');?>>Муж</option>
+                    <option value="Female" <?php echo is_selected($row->gender,'Female');?>>Жен</option>
                   </select>
                 </td>
                 <td>&nbsp;</td>
               </tr>
               <tr>
                 <td>&nbsp;</td>
-                <td>Marital Status:</td>
+                <td>Семейное положение:</td>
                 <td><select name="marital_status" id="marital_status" class="form-control">
-                    <option value="Never Married" <?php echo is_selected($row->marital_status,'Never Married');?>>Never Married</option>
-                    <option value="Married but looking" <?php echo is_selected($row->marital_status,'Married but looking');?>>Married but looking</option>
-                    <option value="Divorced" <?php echo is_selected($row->marital_status,'Divorced');?>>Divorced</option>
-                    <option value="Widowed" <?php echo is_selected($row->marital_status,'Widowed');?>>Widowed</option>
-                    <option value="Separated" <?php echo is_selected($row->marital_status,'Separated');?>>Separated</option>
+                    <option value="Never Married" <?php echo is_selected($row->marital_status,'Never Married');?>>Никогда не состоял(а) в браке</option>
+                    <option value="Married but looking" <?php echo is_selected($row->marital_status,'Married but looking');?>>Состоит в браке, но в поиске</option>
+                    <option value="Divorced" <?php echo is_selected($row->marital_status,'Divorced');?>>В разводе</option>
+                    <option value="Widowed" <?php echo is_selected($row->marital_status,'Widowed');?>>Вдова/Вдовец</option>
+                    <option value="Separated" <?php echo is_selected($row->marital_status,'Separated');?>>Не интересуется</option>
                   </select>
                 </td>
                 <td>&nbsp;</td>
               </tr>
               <tr>
                 <td>&nbsp;</td>
-                <td>Date of Birth:</td>
-                <td><input type="text" name="dob" id="dob" class="form-control" value="<?php echo date('m/d/Y',strtotime($row->dob));?>" readonly="readonly" />
+                <td>Дата рождения:</td>
+                <td><input type="text" name="dob" id="dob" class="form-control" value="<?php echo date('d/m/Y',strtotime($row->dob));?>" readonly="readonly" />
                 </td>
                 <td>&nbsp;</td>
               </tr>
               <tr>
                 <td>&nbsp;</td>
-                <td>Life Style:</td>
+                <td>Образ жизни:</td>
                 <td>
                   <select name="life_style" id="life_style" class="form-control">
-                    <option value="Very Modern" <?php echo is_selected($row->life_style,'Very Modern');?>>Very Modern</option>
-                    <option value="Modern" <?php echo is_selected($row->life_style,'Modern');?>>Modern</option>
-                    <option value="Mid Level" <?php echo is_selected($row->life_style,'Mid Level');?>>Mid Level</option>
-                    <option value="Simple" <?php echo is_selected($row->life_style,'Simple');?>>Simple</option>
-                    <option value="Very Simple" <?php echo is_selected($row->life_style,'Very Simple');?>>Very Simple</option>
+                    <option value="Very Modern" <?php echo is_selected($row->life_style,'Very Modern');?>>Очень современный</option>
+                    <option value="Modern" <?php echo is_selected($row->life_style,'Modern');?>>Современный</option>
+                    <option value="Mid Level" <?php echo is_selected($row->life_style,'Mid Level');?>>Средний уровень</option>
+                    <option value="Simple" <?php echo is_selected($row->life_style,'Simple');?>>Обычный</option>
+                    <option value="Very Simple" <?php echo is_selected($row->life_style,'Very Simple');?>>Очень обычный</option>
                   </select>
                 </td>
                 <td>&nbsp;</td>
               </tr>
               <tr>
                 <td>&nbsp;</td>
-                <td>Smoking:</td>
+                <td>Курит:</td>
                 <td><select name="smoking" id="smoking" class="form-control" >
-                    <option value="No" <?php echo is_selected($row->smoking,'No');?>>No</option>
-                    <option value="Yes" <?php echo is_selected($row->smoking,'Yes');?>>Yes</option>
+                    <option value="No" <?php echo is_selected($row->smoking,'No');?>>Нет</option>
+                    <option value="Yes" <?php echo is_selected($row->smoking,'Yes');?>>Да</option>
                   </select>
                 </td>
                 <td>&nbsp;</td>
               </tr>
               <tr>
                 <td>&nbsp;</td>
-                <td>Drinking:</td>
+                <td>Пьет:</td>
                 <td><select name="drinking" id="drinking" class="form-control">
-                    <option value="No" <?php echo is_selected($row->drinking,'No');?>>No</option>
-                    <option value="Yes" <?php echo is_selected($row->drinking,'Yes');?>>Yes</option>
+                    <option value="No" <?php echo is_selected($row->drinking,'No');?>>Нет</option>
+                    <option value="Yes" <?php echo is_selected($row->drinking,'Yes');?>>Да</option>
                   </select>
                 </td>
                 <td>&nbsp;</td>
               </tr>
               <tr>
                 <td>&nbsp;</td>
-                <td>Education:</td>
+                <td>Образование:</td>
                 <td><select name="education" id="education" class="form-control">
-                    <option value="Middle School" <?php echo is_selected($row->education,'Middle School');?>>Middle School</option>
-                    <option value="Intermediates" <?php echo is_selected($row->education,'Intermediates');?>>Intermediates</option>
-                    <option value="Bachelors" <?php echo is_selected($row->education,'Bachelors');?>>Bachelors</option>
-                    <option value="Masters" <?php echo is_selected($row->education,'Masters');?>>Masters</option>
-                    <option value="Doctorate" <?php echo is_selected($row->education,'Doctorate');?>>Doctorate</option>
+                    <option value="Middle School" <?php echo is_selected($row->education,'Middle School');?>>Среднее общее</option>
+                    <option value="Intermediates" <?php echo is_selected($row->education,'Intermediates');?>>Промежуточное</option>
+                    <option value="Bachelors" <?php echo is_selected($row->education,'Bachelors');?>>Бакалавр</option>
+                    <option value="Masters" <?php echo is_selected($row->education,'Masters');?>>Магистр</option>
+                    <option value="Doctorate" <?php echo is_selected($row->education,'Doctorate');?>>Докторская степень</option>
                   </select>
                 </td>
                 <td>&nbsp;</td>
               </tr>
               <tr>
                 <td>&nbsp;</td>
-                <td>Country:</td>
+                <td>Страна:</td>
                 <td><select name="country" id="country" class="form-control">
                 		<option value="Afganistan">Afghanistan</option>
                 <option value="Albania">Albania</option>
@@ -399,43 +396,43 @@
               </tr>
               <tr>
                 <td>&nbsp;</td>
-                <td>City:</td>
+                <td>Город:</td>
                 <td><input type="text" name="city" id="city" value="<?php echo $row->city;?>" class="form-control" />
                 </td>
                 <td>&nbsp;</td>
               </tr>
               <tr>
                 <td>&nbsp;</td>
-                <td>About Me:</td>
+                <td>Обо мне:</td>
                 <td><textarea name="about_me" id="about_me" class="form-control"><?php echo $row->about_me;?></textarea> </td>
                 <td>&nbsp;</td>
               </tr>
               <tr>
                 <td>&nbsp;</td>
-                <td>Upload Profile Photo:
+                <td>Загрузить фото профиля:
                   </td>
                 <td><input type="file" name="photo" id="photo" /></td>
                 <td>&nbsp;</td>
               </tr>
               <tr>
                 <td>&nbsp;</td>
-                <td><strong>Looking For</strong></td>
+                <td><strong>Ищу</strong></td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
               </tr>
               <tr>
                 <td>&nbsp;</td>
-                <td>Looking For:</td>
+                <td>Ищу:</td>
                 <td><select name="looking_for" id="looking_for" class="form-control">
-                    <option value="Male" <?php echo is_selected($row->looking_for,'Male');?>>Male</option>
-                    <option value="Female" <?php echo is_selected($row->looking_for,'Female');?>>Female</option>
+                    <option value="Male" <?php echo is_selected($row->looking_for,'Male');?>>Муж</option>
+                    <option value="Female" <?php echo is_selected($row->looking_for,'Female');?>>Жен</option>
                   </select>
                   <?php echo form_error('looking_for', '<div class="error"><span>', '</span></div>'); ?></td>
                 <td>&nbsp;</td>
               </tr>
               <tr>
                 <td>&nbsp;</td>
-                <td>Age Between:</td>
+                <td>Диапазон возраста:</td>
                 <td><select name="looking_age_from" id="looking_age_from" class="form-control">
                     <?php for($i=18;$i<=30;$i++):?>
                     <option value="<?php echo $i;?>" <?php echo is_selected($row->looking_age_from,$i);?>><?php echo $i;?></option>
@@ -452,20 +449,20 @@
               </tr>
               <tr>
                 <td>&nbsp;</td>
-                <td>Marital Status:</td>
+                <td>Семейное положение:</td>
                 <td><select name="looking_marital_status" id="looking_marital_status" class="form-control">
-                    <option value="Never Married" <?php echo($row->looking_marital_status=='Never Married')?'selected="selected"':'';?>>Never Married</option>
-                    <option value="Married but looking" <?php echo($row->looking_marital_status=='Married but looking')?'selected="selected"':'';?>>Married but looking</option>
-                    <option value="Divorced" <?php echo($row->looking_marital_status=='Divorced')?'selected="selected"':'';?>>Divorced</option>
-                    <option value="Widowed" <?php echo($row->looking_marital_status=='Widowed')?'selected="selected"':'';?>>Widowed</option>
-                    <option value="Separated" <?php echo($row->looking_marital_status=='Separated')?'selected="selected"':'';?>>Separated</option>
+                    <option value="Never Married" <?php echo($row->looking_marital_status=='Never Married')?'selected="selected"':'';?>>Никогда не состоял(а) в браке</option>
+                    <option value="Married but looking" <?php echo($row->looking_marital_status=='Married but looking')?'selected="selected"':'';?>>Состоит в браке, но в поисках</option>
+                    <option value="Divorced" <?php echo($row->looking_marital_status=='Divorced')?'selected="selected"':'';?>>В разводе</option>
+                    <option value="Widowed" <?php echo($row->looking_marital_status=='Widowed')?'selected="selected"':'';?>>Вдова/Вдовец</option>
+                    <option value="Separated" <?php echo($row->looking_marital_status=='Separated')?'selected="selected"':'';?>>Не интересуется</option>
                   </select>
                   <?php echo form_error('looking_marital_status', '<div class="error"><span>', '</span></div>'); ?></td>
                 <td>&nbsp;</td>
               </tr>
               <tr>
                 <td>&nbsp;</td>
-                <td>Country:</td>
+                <td>Страна:</td>
                 <td><select name="looking_country" id="looking_country" class="form-control">
                     <option value="Afganistan">Afghanistan</option>
                 <option value="Albania">Albania</option>
@@ -728,7 +725,7 @@
               </tr>
               <tr>
                 <td>&nbsp;</td>
-                <td><label>City:</label></td>
+                <td><label>Город:</label></td>
                 <td><input type="text" name="looking_city" id="looking_city" value="<?php echo $row->looking_city;?>" class="form-control" />
                   <?php echo form_error('looking_city', '<div class="error"><span>', '</span></div>'); ?></td>
                 <td>&nbsp;</td>

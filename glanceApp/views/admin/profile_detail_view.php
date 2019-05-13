@@ -15,12 +15,9 @@
   <aside class="right-side"> 
     <!-- Content Header (Page header) -->
     <section class="content-header">
-      <h1> Profile Management 
-        <!--<small>advanced tables</small>--> 
-      </h1>
+      <h1>Управление профилями</h1>
     </section>
     
-    <!-- Main content -->
     <section class="content">
       <div class="row">
         <div class="col-xs-12">
@@ -32,66 +29,66 @@
     <td width="500" valign="top"><table width="500" border="0">
       
       <tr>
-        <td colspan="2"><strong>Personal Info:</strong></td>
+        <td colspan="2"><strong>Личная информация:</strong></td>
       </tr>
       <tr>
-        <td width="140">Full Name:</td>
+        <td width="140">ФИО:</td>
         <td width="350"><?php echo $row->name;?></td>
       </tr>
       <tr>
-        <td>Username:</td>
+        <td>Имя пользователя:</td>
         <td><?php echo $row->username;?></td>
       </tr>
       <tr>
-        <td>Relationship status:</td>
+        <td>Семейное положение:</td>
         <td><span class="inftxt"><?php echo $row->relationship_status;?></span></td>
       </tr>
       <tr>
-        <td>Email:</td>
+        <td>Эл. адрес:</td>
         <td><span class="inftxt"><?php echo $row->email;?></span></td>
         </tr>
       <tr>
-        <td>Phone:</td>
+        <td>Телефон:</td>
         <td><span class="inftxt"><?php echo $row->phone;?></span></td>
         </tr>
       <tr>
-        <td>Gender:</td>
+        <td>Пол:</td>
         <td><span class="inftxt"><?php echo $row->gender;?></span></td>
         </tr>
       <tr>
-        <td>Marital Status:</td>
+        <td>Семейное положение:</td>
         <td><span class="inftxt"><?php echo $row->marital_status;?></span></td>
         </tr>
       <tr>
-        <td>Date Of Birth:</td>
+        <td>Дата рождения:</td>
         <td><span class="inftxt"><?php echo date("F d, Y",strtotime($row->dob));?></span></td>
         </tr>
       <tr>
-        <td>Life Style:</td>
+        <td>Образ жизни:</td>
         <td><span class="inftxt"><?php echo $row->life_style;?></span></td>
         </tr>
       <tr>
-        <td>Smoking:</td>
+        <td>Курит:</td>
         <td><span class="inftxt"><?php echo $row->smoking;?></span></td>
         </tr>
       <tr>
-        <td>Drinking:</td>
+        <td>Пьет:</td>
         <td><span class="inftxt"><?php echo $row->drinking;?></span></td>
         </tr>
       <tr>
-        <td>Education:</td>
+        <td>Образование:</td>
         <td><span class="inftxt"><?php echo $row->education;?></span></td>
         </tr>
       <tr>
-        <td>Country:</td>
+        <td>Страна:</td>
         <td><span class="inftxt"><?php echo $row->country;?></span></td>
         </tr>
       <tr>
-        <td>City:</td>
+        <td>Город:</td>
         <td><span class="inftxt"><?php echo $row->city;?></span></td>
         </tr>
       <tr>
-        <td>About Me:</td>
+        <td>Обо мне:</td>
         <td><?php echo $row->about_me;?></td>
         </tr>
       <tr>
@@ -99,27 +96,27 @@
         <td>&nbsp;</td>
         </tr>
       <tr>
-        <td><strong>Lookin For:</strong></td>
+        <td><strong>Ищу:</strong></td>
         <td>&nbsp;</td>
         </tr>
       <tr>
-        <td>Looking For:</td>
+        <td>Ищу:</td>
         <td><span class="inftxt"><?php echo $row->looking_for;?></span></td>
         </tr>
       <tr>
-        <td>Age Between:</td>
+        <td>Диапазон возраста:</td>
         <td><span class="inftxt"><?php echo $row->looking_age_from;?> to <?php echo $row->looking_age_to;?></span></td>
         </tr>
       <tr>
-        <td>Marital Status:</td>
+        <td>Семейное положение:</td>
         <td><span class="inftxt"><?php echo $row->looking_marital_status;?></span></td>
         </tr>
       <tr>
-        <td>Country:</td>
+        <td>Страна:</td>
         <td><span class="inftxt"><?php echo $row->looking_country;?></span></td>
         </tr>
       <tr>
-        <td>City:</td>
+        <td>Город:</td>
         <td><span class="inftxt"><?php echo $row->looking_city;?></span></td>
         </tr>
       <tr>
@@ -127,7 +124,7 @@
         <td>&nbsp;</td>
         </tr>
       <tr>
-        <td>Total Views :</td>
+        <td>Всего просмотров:</td>
         <td><?php echo $profile_views;?></td>
         </tr>
       <tr>
@@ -140,7 +137,7 @@
     <td colspan="2"><hr /></td>
   </tr>
   <tr>
-    <td colspan="2" valign="top"><strong>&nbsp;&nbsp;Comments:</strong></td>
+    <td colspan="2" valign="top"><strong>Комментарии:</strong></td>
   </tr>
   <tr>
     <td colspan="2" valign="top"><table width="100%" border="0">
@@ -155,7 +152,7 @@
       <tr>
         <td width="3%" rowspan="3" valign="top">&nbsp;</td>
         <td width="5%" rowspan="3" valign="top"><img src="<?php echo $image_thumb;?>" alt="<?php echo $commentDetail->name; ?>" width="60" style="border:2px solid #666; border-radius:5px; margin:4px;" /></td>
-        <td width="53%"><a href="<?php echo base_url(); ?>profile/<?php echo $commentDetail->username; ?>" class="userlink" title="<?php echo $commentDetail->name; ?>"><?php echo $commentDetail->name; ?></a> <span style="float:right;"><a href="<?php echo base_url(); ?>admin/profile_detail/user_comment_delete/<?php echo $row->username; ?>/<?php echo $commentDetail->comment_id; ?>">Delete This Comment</a></span></td>
+        <td width="53%"><a href="<?php echo base_url(); ?>profile/<?php echo $commentDetail->username; ?>" class="userlink" title="<?php echo $commentDetail->name; ?>"><?php echo $commentDetail->name; ?></a> <span style="float:right;"><a href="<?php echo base_url(); ?>admin/profile_detail/user_comment_delete/<?php echo $row->username; ?>/<?php echo $commentDetail->comment_id; ?>">Удалить этот комментарий</a></span></td>
         <td width="39%">&nbsp;</td>
       </tr>
       <tr>
@@ -172,7 +169,7 @@
 	} else {
 	  ?>
       <tr>
-        <td colspan="4">&nbsp;&nbsp;No Comment Found</td>
+        <td colspan="4">&nbsp;&nbsp;Комментарий не найден</td>
         </tr>
     <?php
 	}
@@ -182,18 +179,12 @@
           </table>
 
             
-            <!-- /.box-body --> 
           </div>
-          <!-- /.box --> 
-          
-          <!-- /.box --> 
+
         </div>
       </div>
     </section>
-    <!-- /.content --> 
   </aside>
-  <!-- /.right-side --> 
 </div>
-<!-- ./wrapper -->
 </body>
 </html>

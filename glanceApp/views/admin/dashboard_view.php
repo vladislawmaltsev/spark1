@@ -15,7 +15,7 @@
   <aside class="right-side"> 
     <!-- Content Header (Page header) -->
     <section class="content-header">
-      <h1> Dashboard</h1></section>
+      <h1>Панель</h1></section>
     
     <!-- Main content -->
     <section class="content">
@@ -28,11 +28,9 @@
               <tr>
                 <td align="center">
                 <img src="<?php echo base_url();?>glancePublic/images/admin_images/view_profile.png" /><br />
-                <a href="<?php echo base_url().'admin/profiles_lists';?>">View All Profiles</a></td>
-                <td align="center"><img src="<?php echo base_url();?>glancePublic/images/admin_images/cms.png" alt="" /><br />
-                <a href="<?php echo base_url().'admin/pages_manage';?>">Manage CMS</a></td>
+                <a href="<?php echo base_url().'admin/profiles_lists';?>">Просмотреть все профили</a></td>
                 <td align="center"><img src="<?php echo base_url();?>glancePublic/images/admin_images/msg.png" alt="" /><br />
-                <a href="<?php echo base_url().'admin/all_messages';?>">Manage User Messages</a></td>
+                <a href="<?php echo base_url().'admin/all_messages';?>">Управление сообщениями пользователя</a></td>
               </tr>
               <tr>
                 <td>&nbsp;</td>
@@ -41,9 +39,9 @@
               </tr>
               <tr>
                 <td align="center"><img src="<?php echo base_url();?>glancePublic/images/admin_images/search.png" alt="" /><br />
-                <a href="<?php echo base_url().'admin/search_profile_name';?>">Search Profiles</a></td>
+                <a href="<?php echo base_url().'admin/search_profile_name';?>">Поиск профилей</a></td>
                 <td align="center"><img src="<?php echo base_url();?>glancePublic/images/admin_images/logout.png" alt="" /><br />
-                <a href="<?php echo base_url().'admin/home/logout';?>">Logout</a></td>
+                <a href="<?php echo base_url().'admin/home/logout';?>">Выйти</a></td>
                 <td>&nbsp;</td>
               </tr>
               <tr>

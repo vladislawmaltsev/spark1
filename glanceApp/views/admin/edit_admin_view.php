@@ -12,12 +12,9 @@
 <?php $this->load->view('admin/common/header'); ?>
 <div class="wrapper row-offcanvas row-offcanvas-left">
   <?php $this->load->view('admin/common/left_side'); ?>
-  <!-- Right side column. Contains the navbar and content of the page -->
-  <aside class="right-side"> 
-    <!-- Content Header (Page header) -->
+  <aside class="right-side">
     <section class="content-header">
-      <h1> Manage Admin<!--<small>advanced tables</small>--> 
-      </h1>
+      <h1> Управление Админинистратором</h1>
     </section>
     
     <!-- Main content -->
@@ -42,14 +39,14 @@
             <form action="<?php echo base_url()."admin/home/update_pass"; ?>" method="post">
               <table width="100%" border="0">
                 <tr>
-                  <td width="19%" align="right" valign="top"><strong>New Password:</strong>&nbsp;</td>
+                  <td width="19%" align="right" valign="top"><strong>Новый пароль:</strong>&nbsp;</td>
                   <td width="81%">
                   <input type="password" name="change_password" id="change_password" autocomplete="off" />
                   </td>
                 </tr>
                 
                 <tr>
-                  <td width="19%" align="right" valign="top"><strong>Confirm Password:</strong>&nbsp;</td>
+                  <td width="19%" align="right" valign="top"><strong>Подтвердите Пароль:</strong>&nbsp;</td>
                   <td width="81%">
                   <input type="password" name="confirm_password" id="confirm_password" autocomplete="off" />
                   </td>
